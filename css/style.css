@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(252, 253, 253);
+    font-family: helvetica;
+    margin: 0;
+    padding: 100px;
+    padding-top: 50px;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.agregar{
+    background-color: rgb(136, 219, 27);
+}
+
+.delete{
+    background-color: rgba(221, 14, 14, 0.753);
+    position: relative;
+    left: 40px;   
+}   
+
+div{
+    padding-top: 30px;
+    text-align:center;
+}
+
+.registro{
+    width: 80px;
+    padding: 5px;
+    margin:5px auto;
+	display:block;
+}

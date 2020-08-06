@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario vue.js Maria José</title>
+</head>
+<body>
+    <h1>Formulario Vue.js </h1>
+    <h2>Registro</h2>
+    <img src="img/logo-gestoria1.png" class="registro">
+
+    <!--cada uno de mis botones tiene el @click y @keyup.enter-->
+    <div id="app" class="div">
+        <label>Ingresar Nombre</label>
+        <input type="text" v-model="nuevoApellido" @keyup.enter="agregarApellido">
+        <button @click="agregarApellido" class="agregar">Agregar</button>
+
+        <ul>
+            <!--hace un recorrido en cada uno de los elementos para mostrar y eliminar-->
+            <li v-for="apellido of apellidos">
+                {{apellido.apellido}} 
+                <button @click="eliminarElemento(nombre)" class="delete">Eliminar</button>
+            </li>
+        </ul>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="app.js"></script>
+</html>
